@@ -1,0 +1,12 @@
+# Use the official MySQL image as base image
+FROM mysql:8.0
+
+# Set environment variables for MySQL
+ENV MYSQL_ROOT_PASSWORD=rootpassword
+ENV MYSQL_DATABASE=rlsoffice
+
+# Expose port 3306 for MySQL
+EXPOSE 3306
+
+# Default command to run MySQL
+CMD ["mysqld"]
